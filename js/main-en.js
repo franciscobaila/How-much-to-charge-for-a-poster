@@ -20,16 +20,19 @@ app.init = function() {
 app.input = function() {
 	var self = this;
 	window.onwheel = function(){ return true; }
+	$('body').css({
+		"overflow-y": "auto"
+	})
 	$('#scroll-dot1').css({
 		"background": "white"
 	})
 	$("#scroll-nav").fadeIn(300);
 	self.budget = document.getElementById('input-1-txt');
-	document.getElementById('output-1').innerHTML = 'O seu orçamento é';
+	document.getElementById('output-1').innerHTML = 'Your budget is';
 	$("#img-0-contender").fadeIn(300);
 	document.getElementById('output-1-1').innerHTML = self.budget.value;
 	self.output2 = Math.round((self.budget.value - 75.27) * 100) / 100;
-	document.getElementById('output-2').innerHTML = 'O seu orçamento é agora';
+	document.getElementById('output-2').innerHTML = 'Your budget is now';
 	document.getElementById('output-2-1').innerHTML = self.output2;
 	$("#instructions").fadeIn(500);
 	$("#img-0-1-contender").fadeIn(500);
@@ -43,22 +46,22 @@ app.input = function() {
 	document.getElementById('output-6').innerHTML = self.output6;
 	self.output7 = Math.round((self.output6 - 18.82) * 100) / 100;
 	document.getElementById('output-7').innerHTML = self.output7;
-	document.getElementById('output-9').innerHTML = 'Acabou o cartaz com um orçamento de ' + "<b>" + self.output7 + "</b>" + "<b>" + '€' + "</b>" + '.';
+	document.getElementById('output-9').innerHTML = 'You ended the poster with a budget of ' + "<b>" + self.output7 + "</b>" + "<b>" + '€' + "</b>" + '.';
 	if (self.output7 > 70){
-		document.getElementById('output-8').innerHTML = 'Muito bem, provou que tem ideia de quanto' + "<br>" + 'um designer tem de pagar para viver e trabalhar.';
+		document.getElementById('output-8').innerHTML = 'Very well, you proved that you know how much' + "<br>" + 'a designer has to pay for live and work.';
 	} else if (self.output7 > 0 && self.output7 < 70){
-		document.getElementById('output-8').innerHTML = 'Pelo menos não teve prejuízo com este trabalho.' + "<br>" + 'Deveria pensar melhor sobre quanto um designer' + "<br>" + 'tem de pagar para viver e trabalhar.';
+		document.getElementById('output-8').innerHTML = 'At least had no damage with this job.' + "<br>" + 'You should think better about how much a designer' + "<br>" + 'has to pay for live and work..';
 	} else if (self.output7 < 0){
-		document.getElementById('output-8').innerHTML = 'Teve prejuízo com este trabalho.' + "<br>" + 'Sim, um designer tem de pagar para viver e trabalhar.';
+		document.getElementById('output-8').innerHTML = 'You had damage with this job.' + "<br>" + 'Yes, a designer has to pay for live and work.';
 	}
 }
 
 app.events = function() {
-	$("#en").click(function() {
-		window.location.href = "index-en.html";
+	$("#pt").click(function() {
+		window.location.href = "index.html";
 	});
 	$("#print-button").click(function() {
-		window.location.href = "poster.pdf";
+		window.location.href = "poster-en.pdf";
 	});
 	$("#scroll-dot1").click(function() {
 		$('html, body').animate({scrollTop : 0},1100);
