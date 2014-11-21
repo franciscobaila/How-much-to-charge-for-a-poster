@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Francisco Baila">
+
+    <title>Quanto cobraria por um cartaz?</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link href="css/style-en.css" rel="stylesheet" type="text/css">
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google maps api -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+</head>
+<body>
+    <div id="lang">
+      <div id="pt">pt</div>
+      <div id="bar">/</div>
+      <div id="en">en</div>
+    </div>
+    <div id="scroll-nav">
+      <div id="scroll-dot1" class="scroll-dots"></div>
+      <div id="scroll-dot2" class="scroll-dots"></div>
+      <div id="scroll-dot3" class="scroll-dots"></div>
+      <div id="scroll-dot4" class="scroll-dots"></div>
+      <div id="scroll-dot5" class="scroll-dots"></div>
+      <div id="scroll-dot6" class="scroll-dots"></div>
+      <div id="scroll-dot7" class="scroll-dots"></div>
+      <div id="scroll-dot8" class="scroll-dots"></div>
+      <div id="scroll-dot9" class="scroll-dots"></div>
+      <div id="scroll-dot10" class="scroll-dots"></div>
+    </div>
+    <div id="print-button">Get your poster.</div>
+    <div id="moment-1" class="moment">
+      <div id="input-1">
+        <div id="input-1-title" class="title">How much would you charge for a poster?</div>
+        <form action="javascript:app.input()">
+          <input type="number" name="budget-input" placeholder="Ex.: 235" id="input-1-txt" min="0" max="1000">
+          <label id="input-1-label" for="input-1-txt">€</label>
+          <input type="submit" value="Ok." id="input-1-button">
+        </form>
+      </div>
+      <div id="output-1"></div>
+      <div id="img-0-contender" class="img-contender">
+        <img id="img-0" class="img-insider" src="img/budget.png" />
+        <div id="output-1-1"></div>
+      </div>
+      <div id="img-0-1-contender" class="img-contender">
+        <img id="img-0-1" class="img-insider" src="img/arrow.png" />
+      </div>
+      <div id="instructions">Click or scroll down.</div>
+    </div>
+
+    <div id="moment-2" class="moment">
+        <div id="moment-2-txt" class="moment-txt">
+          <div id="moment-2-txt-title" class="mini-title">This is you.</div>
+          <div id="moment-2-txt-sub" class="sub-title">You will be the poster's designer.</div>
+        </div>
+        <div id="img-1-contender" class="img-contender">
+          <img id="img-1" class="img-insider" src="img/designer.png" />
+        </div>
+    </div>
+
+    <div id="moment-3" class="moment">
+        <div id="moment-3-txt" class="moment-txt">
+          <div id="moment-3-txt-title" class="mini-title">You will be spending 10 days working on the poster.</div>
+          <div id="moment-3-txt-sub" class="sub-title">
+            Let's simplify by saying that a designer dedicates,<br>on average, <b>7 hours</b> of work during <b>10 days</b> to a poster.</div>
+        </div>
+        <div id="img-2-contender" class="img-contender">
+        </div>
+    </div>
+
+    <div id="moment-4" class="moment">
+        <div id="moment-4-txt" class="moment-txt">
+          <div id="moment-4-txt-title" class="mini-title">You need a place to live and work.</div>
+          <div id="moment-4-txt-sub" class="sub-title">
+            You pay <b>400€</b> per month for the rental of your apartment.<br>
+            The 70 hours of work that you will employ on the poster<br>
+            will pay <b>75,27€</b> of the total 400€.<br><br>
+            A month has 31 days. You can spend 12 hours per day<br>
+            working. 31 * 12 = <b>372</b>. In this case, you will work<br>
+            7 hours per dday on the poster. 70 * 400 / 372 = <b>75.27</b>
+          </div>
+        </div>
+        <div id="img-3-contender" class="img-contender">
+          <img id="img-3" class="img-insider" src="img/workplace.png" />
+        </div>
+        <div id="output-2"></div>
+        <div id="img-4-contender" class="img-contender">
+          <img id="img-4" class="img-insider" src="img/budget.png" />
+        </div>
+        <div id="output-2-1"></div>
+    </div>
+
+    <div id="moment-5" class="moment">
+      <div id="moment-5-txt" class="moment-txt">
+        <div id="moment-5-txt-title" class="mini-title">There is a set of essential tools for a designer.</div>
+        <div id="moment-5-txt-sub" class="sub-title">
+          <b>Computer</b> — 2000€ / 12 months / 5 years(object's validity) = <b>33,33€</b> per month<br>
+          <b>Camera</b> — 700€ / 12 months / 5 years(object's validity) = <b>11,67€</b> per month<br>
+          <b>Printer</b> — 1000€ / 12 months / 7 years(object's validity) = <b>16,67€</b> per month<br>
+          <b>Creative software</b> — <b>61,49€</b> per month<br><br>
+          All this will cost you, per month, <b>123,16€</b>.<br>
+          The poster should pay <b>23,84€</b> of the total 123,16€.
+        </div>
+      </div>
+      <div id="img-5-contender" class="img-contender">
+      </div>
+      <div id="img-6-contender" class="img-contender">
+        <img id="img-6" class="img-insider" src="img/budget.png" />
+      </div>
+      <div id="output-3"></div>
+    </div>
+
+    <div id="moment-6" class="moment">
+      <div id="moment-6-txt" class="moment-txt">
+        <div id="moment-6-txt-title" class="mini-title">Like all humans, you need to eat <br>and use water and light.</div>
+        <div id="moment-6-txt-sub" class="sub-title">
+          In food you will spen, on average, <b>200€</b> per month.<br>
+          To cook, wash, etc, you will pay <b>30€</b> per month for water.<br>
+          The electricity in order to work, have lighting, etc,<br>
+          also cots, <b>30€</b> per month.<br><br>
+          This job should pay <b>48.92€</b> of the total 260€.
+        </div>
+      </div>
+      <div id="img-7-contender" class="img-contender">
+      </div>
+      <div id="img-8-contender" class="img-contender">
+        <img id="img-8" class="img-insider" src="img/budget.png" />
+      </div>
+      <div id="output-4"></div>
+    </div>
+
+    <div id="moment-7" class="moment">
+      <div id="moment-7-txt" class="moment-txt">
+        <div id="moment-7-txt-title" class="mini-title">The client will call you or send you an e-mail.</div>
+        <div id="moment-7-txt-sub" class="sub-title">
+          Two days later the customer will remember something<br>
+          he wants to change and will try to talk to you.<br><br>
+          The poster will have to pay <b>5.65€</b> of the <b>30€</b> that you pay<br>
+          per month in internet and phone.
+        </div>
+      </div>
+      <div id="img-9-contender" class="img-contender">
+      </div>
+      <div id="img-10-contender" class="img-contender">
+        <img id="img-10" class="img-insider" src="img/budget.png" />
+      </div>
+      <div id="output-5"></div>
+    </div>
+
+    <div id="moment-8" class="moment">
+      <div id="moment-8-txt" class="moment-txt">
+        <div id="moment-8-txt-title" class="mini-title">By the fifth day you will begin testing prints.</div>
+        <div id="moment-8-txt-sub" class="sub-title">
+          To buy paper you will apend <b>40€</b> per month.<br> In cartridges will be around the <b>80€</b> per month.<br><br>
+          The poster will pay <b>22.58€</b> of the total 120€.
+        </div>
+      </div>
+      <div id="img-12-contender" class="img-contender">
+      </div>
+      <div id="img-11-contender" class="img-contender">
+        <img id="img-11" class="img-insider" src="img/budget.png" />
+      </div>
+      <div id="output-6"></div>
+    </div>
+
+    <div id="moment-9" class="moment">
+      <div id="moment-9-txt" class="moment-txt">
+        <div id="moment-9-txt-title" class="mini-title">Close to completing the job there is a meeting<br>
+          to discuss what has been done so far.</div>
+        <div id="moment-9-txt-sub" class="sub-title">
+          To be able to go to meetings with clients and to move<br>
+          in general, you pay per month <b>100€</b>.<br><br>
+          Again this job will pay <b>18.82€</b> of the total 100€.
+        </div>
+      </div>
+
+      <div id="img-14-contender" class="img-contender">
+        <img id="img-14" class="img-insider" src="img/budget.png" />
+      </div>
+      <div id="output-7"></div>
+      <div id="car-track">
+        <div id="img-car-contender">
+          <img id="img-car" class="img-insider" src="img/car.png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="moment-10" class="moment">
+      <div id="output-9"></div>
+      <div id="output-8"></div>
+      <div id="message">
+        Whenever you accept work for free you are hurting others, <b>and yourself</b>.
+      </div>
+    </div>
+
+    <!-- Javascript at the bottom -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- for testing -->
+    <script type="text/javascript" src="js/main-en.js"></script>
+</body>
+</html>
