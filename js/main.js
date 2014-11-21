@@ -22,7 +22,10 @@ app.input = function() {
 	window.onwheel = function(){ return true; }
 	$('#scroll-dot1').css({
 		"background": "white"
-	})
+	});
+	$('body').css({
+		"overflow-y": "auto"
+	});
 	$("#scroll-nav").fadeIn(300);
 	self.budget = document.getElementById('input-1-txt');
 	document.getElementById('output-1').innerHTML = 'O seu orçamento é';
