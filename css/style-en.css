@@ -929,3 +929,53 @@ b{
 	from { background-position:    0px; }
 		to { background-position: -4000px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#responsive-message{
+	display:none;
+	font-family:Regular;
+	color:white;
+	font-size:20px;
+	width: 100%;
+	text-align: center;
+	position:fixed;
+	margin-top:200px;
+}
+
+/*970px*/
+@media only screen and (max-width : 60.625em) {
+	.moment{
+		display:none;
+	}
+	#responsive-message{
+		display:block;
+	}
+}
