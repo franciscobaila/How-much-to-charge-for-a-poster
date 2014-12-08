@@ -34,8 +34,8 @@ app.input = function() {
 	self.output2 = Math.round((self.budget.value - 75.27) * 100) / 100;
 	document.getElementById('output-2').innerHTML = 'Your budget is now';
 	document.getElementById('output-2-1').innerHTML = self.output2;
-	$("#instructions").fadeIn(500);
 	$("#img-0-1-contender").fadeIn(500);
+	$("#instructions").fadeIn(500);
 	self.output3 = Math.round((self.output2 - 23.84) * 100) / 100;
 	document.getElementById('output-3').innerHTML = self.output3;
 	self.output4 = Math.round((self.output3 - 48.92) * 100) / 100;

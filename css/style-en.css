@@ -420,7 +420,7 @@ b{
 	margin-top:-50px;
 	color:white;
 	z-index:100;
-	margin-left:calc(50% - 170px);
+	margin-left:calc(50% - 150px);
 	cursor:pointer;
 	display:none;
 }
@@ -782,6 +782,122 @@ b{
 
 
 
+
+/*-----RESPONSIVE------------------------------------------------------------------------*/
+#responsive-message{
+	display:none;
+	font-family:Regular;
+	color:white;
+	font-size:20px;
+	width: 100%;
+	text-align: center;
+	position:fixed;
+	margin-top:200px;
+}
+
+/* 768px */
+@media only screen and (max-width : 48.000em) {
+	.moment{
+		display:none;
+	}
+	#responsive-message{
+		display:block;
+	}
+}
+
+/* 768px / 992px */
+@media only screen and (min-width : 48.000em) and (max-width : 62.000em) {
+	#scroll-nav{
+		top:calc(50% - 160px);
+		height:320px;
+	}
+	.scroll-dots{
+		width:12px;
+		height:12px;
+		margin-top:15px;
+	}
+
+	#moment-1{
+		margin-top: 35px !important;
+	}
+	#input-1-title{
+		font-size: 20px;
+	}
+	#output-1{
+		font-size:16px !important;
+		margin-top:60px !important;
+	}
+	#img-0-contender{
+		width:100px;
+		height:50px;
+		margin-left:calc(50% - 50px);
+		margin-top:-30px;
+	}
+	#img-0-1-contender{
+		width:65px;
+		height:65px;
+		margin-top:70px;
+	}
+	#instructions{
+		font-size:16px;
+		margin-left:calc(50% - 140px);
+		margin-top: -40px !important;
+	}
+	.mini-title{
+		font-size:20px;
+		line-height:120%;
+	}
+	.sub-title{
+		font-size:16px;
+		margin-top:10px;
+		line-height:120%;
+	}
+	#moment-3-txt-title{
+		width:280px;
+	}
+
+	#img-3-contender{
+		width:350px;
+		height:295px;
+		padding:100px;
+		padding-bottom:0px !important;
+		margin-top:30px;
+		margin-left:40%;
+		background:rgb(155,89,182);
+	}
+	#img-4-contender, #img-6-contender, #img-8-contender, #img-10-contender, #img-11-contender, #img-14-contender{
+		width:100px;
+		height:80px;
+	}
+	#output-2-1, #output-3, #output-4, #output-5, #output-6, #output-7{
+		font-size:20px;
+		width:70px;
+		margin-top:-81px;
+	}
+	#img-14-contender{
+		margin-left:75%;
+		margin-top:45px;
+	}
+	#output-7{
+		margin-left:68%;
+	}
+
+	#output-9{
+		font-size:18px;
+		margin-left:5%;
+	}
+	#output-8{
+		font-size:18px;
+		margin-top:30px;
+	}
+	#message{
+		font-size:16px;
+	}
+}
+
+
+
+
 /*-----ANIMATION------------------------------------------------------------------------*/
 @-webkit-keyframes car2 {
 	from { margin-left: -400px; }
@@ -928,54 +1044,4 @@ b{
 @keyframes print {
 	from { background-position:    0px; }
 		to { background-position: -4000px; }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#responsive-message{
-	display:none;
-	font-family:Regular;
-	color:white;
-	font-size:20px;
-	width: 100%;
-	text-align: center;
-	position:fixed;
-	margin-top:200px;
-}
-
-/*970px*/
-@media only screen and (max-width : 60.625em) {
-	.moment{
-		display:none;
-	}
-	#responsive-message{
-		display:block;
-	}
 }
